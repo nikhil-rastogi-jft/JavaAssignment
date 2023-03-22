@@ -10,7 +10,8 @@ public class ThirdLargest {
             arr[i]=sc.nextInt();
         int f=arr[0],s=0,t=0;
         for(int i=1;i<n;i++){
-            if(f<arr[i]){
+            if(f==arr[i]||s==arr[i]||t==arr[i]){}
+            else if(f<arr[i]){
                 t=s;
                 s=f;
                 f=arr[i];
